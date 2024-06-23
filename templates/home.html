@@ -1,6 +1,25 @@
+<<<<<<< HEAD
 <!-- <h1>Hello World!!</h1> -->
  <!-- <h1>Hello Dheeraj</h1> -->
   <h1>Hello {{name}}
     <br>
     Good Morning!
   </h1>
+=======
+{% extends 'base.html'%}
+{% block content %}
+
+<h1>Hello {{name}}</h1>
+
+
+<!-- Addition of two Number -->
+<form action="add" method='post'>
+
+    {% csrf_token %}
+    Enter First Number: <input type="text" name="num1"><br>
+    Enter Second Number: <input type="text" name="num2"><br>
+    <input type="submit">
+</form>
+
+{% endblock %}
+>>>>>>> b0f67ace3e9d60a693dd7d5e5e36e67b3914040d
